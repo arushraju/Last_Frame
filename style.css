@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    height: 99vh;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+
+.map-container{
+    flex: 1;
+}
+
+.intro-container {
+    flex: 2;
+    background-image: url(./Cartoon_Cinema_Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.search-container {
+    flex: 1;
+}
+
+.concept {
+    border: 1px solid rgb(255, 47, 47);
+}
+
+.movie{
+    border: 1px solid rgb(255, 255, 255);
+    width: fit-content;
+}
+
+.button-flex{
+    position: absolute;
+    height: 200px;
+    bottom: -80px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    background-image: url(./Movie_Seat_Back.png);
+    background-size: cover;
+    
+}
+
+.button{
+    flex: 1;
+    height: 200px;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.button img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.screen-display-container{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    border: 2px solid black;
+    top: 10px;
+    left: 200px;
+}
+
+.french-fries-container{
+    position: absolute;
+    left: 40%;
+    height: 99vh;
+    width: 2%;
+    border: 1px solid cyan;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.notice-board-position{
+    position: absolute;
+    left: 5%;
+    width: 100px;
+    bottom: 0;
+    scale: 2;
+    transform-origin: bottom;
+}
+.notice-board-position img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.notice-content-container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 40%;
+    font-size: smaller;
+    border: 1px solid;
+}
+
+.loading-page-container{
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.loading-page-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Loading_Image{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    
+    z-index: 102;
+}
+
+.slice{
+    position: absolute;
+
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 101;
+    opacity: 0;
+}
+
+.slice img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+.slice1{ background-color: white;}
+.slice2{ background-color: rgb(92, 92, 220);}
+.slice3{ background-color: rgb(100, 184, 100);}
+.slice4{ background-color: red;}
+.slice5{ background-color: yellow;}
+.slice6{ background-color: orange;}
+.slice7{ background-color: violet;}
+.slice8{ background-color: pink;}
+
+.Loading_Image{
+    display: none;
+}
